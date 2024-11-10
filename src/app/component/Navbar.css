@@ -1,0 +1,99 @@
+/* Navbar.css */
+
+/* Sticky Navbar */
+.navbar-container {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: #f3f4f6; /* Equivalent of bg-gray-100 */
+}
+
+/* Navbar Header */
+.navbar-header {
+  color: #4b5563; /* Equivalent of text-gray-600 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+/* Container for responsive max width */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align logo, nav links, and button */
+}
+
+/* Logo Styling */
+.logo {
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: #17323d;
+  letter-spacing: 0.1rem;
+}
+
+/* Navigation links in a single row */
+.nav-links {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+/* Nav Link Styling */
+.nav-link {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #17323d;
+}
+
+/* Button Styling */
+.button {
+  background-color: #979797;
+  color: white;
+  padding: 0.25rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.button:hover {
+  background-color: #17323d;
+  border-color: #17323d;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem; /* Adjust padding for small screens */
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .button {
+    margin-top: 1rem; /* Adjust button position */
+  }
+}

@@ -1,0 +1,48 @@
+/* Footer.css */
+
+/* Footer container */
+.footer-container {
+  background-color: #f3f4f6; /* Light gray background similar to bg-gray-100 */
+  padding: 1.5rem 0; /* Reduced padding to make footer thinner */
+}
+
+/* Footer layout */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left; /* Align text to the left for better horizontal alignment */
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #4b5563; /* Medium gray text similar to text-gray-600 */
+  gap: 1.5rem; /* Added gap between logo and footer text */
+}
+
+/* Logo styling */
+.logo {
+  font-size: 2rem; /* Adjusted logo size to fit better */
+  font-weight: 800;
+  color: #17323d; /* Dark blue */
+  text-decoration: none;
+}
+
+/* Footer text styling */
+.footer-text {
+  font-size: 0.875rem; /* Similar to text-sm */
+  color: #6b7280; /* Darker gray */
+  border-top: none; /* Removed top border for cleaner look */
+  padding-top: 0; /* Removed padding top */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* Stack logo and footer text vertically on small screens */
+    text-align: center; /* Center text when stacked */
+    gap: 1rem; /* Adjust gap when stacked */
+  }
+
+  .logo {
+    font-size: 1.75rem; /* Slightly reduce logo size on mobile */
+  }
+}

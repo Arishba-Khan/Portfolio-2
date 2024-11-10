@@ -1,0 +1,160 @@
+/* Contact.css */
+
+/* Background and general text color */
+#contact {
+  background-color: #003049; /* Same background color as button */
+  color: #ffffff; /* Text color changed to white for better contrast */
+  padding: 3rem 0;
+}
+
+/* Container for the form content */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Centering the header section */
+.text-center {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Title Styling */
+.title {
+  font-size: 2.25rem; /* Larger font size */
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #ffffff; /* Changed to white for better visibility */
+  letter-spacing: 0.5px;
+  text-transform: uppercase; /* Adding uppercasing for style */
+}
+
+/* Subtitle Styling */
+.subtitle {
+  font-size: 1.125rem;
+  max-width: 70%;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #e5e7eb; /* Lighter color for subtitle for better contrast on dark background */
+}
+
+/* Form container */
+.form-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #ffffff; /* White background for form container to contrast with dark section */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox container for input groups */
+.flex {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+/* Input group styling */
+.input-group {
+  width: 100%;
+  max-width: 45%; /* Control input width for responsiveness */
+  margin-bottom: 1rem;
+}
+
+/* Label Styling */
+.label {
+  display: block;
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+/* Input & Textarea Styling */
+.input, .textarea {
+  width: 100%;
+  background-color: #f3f4f6; /* Slightly darker background for fields */
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: #374151;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+.input:focus, .textarea:focus {
+  background-color: #ffffff;
+  border-color: #5c6bc0;
+  box-shadow: 0 0 0.25rem rgba(92, 107, 192, 0.5);
+}
+
+/* Textarea custom height */
+.textarea {
+  height: 150px;
+  resize: none;
+}
+
+/* Button container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+/* Button Styling */
+.button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #003049; /* Darker color for button */
+  color: white;
+  padding: 0.75rem 2rem;
+  border: 2px solid transparent;
+  border-radius: 25px; /* Rounded edges for the button */
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #005f73;
+  border-color: #005f73;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button:focus {
+  outline: none;
+  border-color: #5c6bc0;
+  box-shadow: 0 0 0.25rem rgba(92, 107, 192, 0.5);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .input-group {
+    width: 100%;
+  }
+
+  .form-container {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem; /* Adjust title size on small screens */
+  }
+
+  .subtitle {
+    font-size: 1rem; /* Adjust subtitle size */
+    max-width: 80%; /* Make subtitle take more width */
+  }
+}
